@@ -10,10 +10,6 @@ export type CommentType = {
   body: string
 }
 
-export type PostProps = {
-  post: PostType,
-}
-
 export type NewPostType = {
   title: string
   body: string
@@ -21,7 +17,11 @@ export type NewPostType = {
 
 export type SpecificPostProps = {
   post: PostType,
-  deletePost: (postId:number) => void,
+  deletePost: (postId: number) => void,
   addComment: (comment: CommentType) => void,
   editPost: (post: PostType) => void
+}
+
+export type PostProps = {
+  post: PostType,
 }

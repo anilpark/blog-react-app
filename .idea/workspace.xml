@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bdf5e52-56c9-41cc-8636-d5681109e70d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/posts-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AddCommentForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CreatePostForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Posts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SpecificPost.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/PostsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SpecificPostPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/posts-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/props-types.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditPostForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/posts-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/posts-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddCommentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddCommentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreatePostForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatePostForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpecificPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpecificPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PostsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PostsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SpecificPostPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SpecificPostPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/posts-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/posts-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/props-types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602074253871</updated>
       <workItem from="1602074255841" duration="9824000" />
-      <workItem from="1602089984439" duration="54360000" />
+      <workItem from="1602089984439" duration="70071000" />
     </task>
     <servers />
   </component>

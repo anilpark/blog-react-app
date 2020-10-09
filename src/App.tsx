@@ -11,13 +11,13 @@ function App() {
     <BrowserRouter>
       <Provider store={store}>
         <Switch>
-          <Route render={()=> <PostsPage/>} path={'/posts'} exact/>
-          <Route render={()=> <SpecificPostsPage/>} path={'/posts/:postId'}/>
-          <Route render={()=> <Redirect to={'/posts'}/>} path={'*'}/>
+          <Route render={() => <PostsPage/>} path={'/posts'} exact/>
+          <Route render={() => <SpecificPostsPage/>} path={'/posts/:postId'}/>
+          <Route render={() => <Redirect to={'/posts'}/>} path={'*'}/>
         </Switch>
       </Provider>
     </BrowserRouter>
-
   )
 }
+
 export default App;

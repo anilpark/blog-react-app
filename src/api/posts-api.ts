@@ -1,46 +1,49 @@
-import {CommentType, NewPostType, PostType} from "../types/props-types";
+import {CommentType, NewPostType, PostType} from "../types/types";
 import axios from 'axios'
 
-const posts = axios.create({
-  baseURL: 'https://bloggy-api.herokuapp.com/posts',
-  headers:     {
+const baseAxiosInstanceSetup = {
+  baseURL: 'https://bloggy-api.herokuapp.com/',
+  headers: {
     "Content-Type": 'application/json'
   }
+}
+
+const posts = axios.create({
+  ...baseAxiosInstanceSetup, baseURL: baseAxiosInstanceSetup.baseURL + 'posts'
 });
 
 const comments = axios.create({
-  baseURL: 'https://bloggy-api.herokuapp.com/comments',
-  headers:     {
-    "Content-Type": 'application/json'
-  }
+  ...baseAxiosInstanceSetup, baseURL: baseAxiosInstanceSetup.baseURL + 'comments'
 });
-
 
 export const postsAPI = {
   getPosts() {
-    return posts.get('/').then(res=>res.data as PostType[])
+    return posts.get<PostType[]>('/').then(res => res.data)
   },
-  getPost(postId: number){
-    return posts.get('/' + postId, {
+  getPost(postId: number) {
+    return posts.get<PostType>('/' + postId, {
       params: {
         '_embed': 'comments'
       }
     })
-      .then(res=>res.data as PostType)
+      .then(res => res.data)
   },
-  editPost(post: PostType){
+  editPost(post: PostType) {
     return posts.put('/' + post.id, {
       title: post.title,
       body: post.body
-    }).then(res=> 'ok')
+    }).then(res => 'ok')
   },
-  createPost(post: NewPostType){
-    return posts.post('/', post).then(res=>'Added')
+  createPost(post: NewPostType) {
+    return posts.post('/', post).then(res => 'Added')
   },
-  deletePost(postId:number){
-    return posts.delete('/' + postId).then(res=> 'ok')
-  },
-  addComment(comment: CommentType){
-    return comments.post('', comment).then(res=> 'ok')
+  deletePost(postId: number) {
+    return posts.delete('/' + postId).then(res => 'ok')
+  }
+}
+
+export const commentsAPI = {
+  addComment(comment: CommentType) {
+    return comments.post('', comment).then(res => 'ok')
   }
 }
