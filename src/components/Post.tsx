@@ -11,7 +11,8 @@ export const Post: React.FC<PostProps> = ({post}) => {
         <h5 className="card-title">{post.title}</h5>
         <p className="card-text">{post.body}</p>
         <button className={'btn btn-outline-info'}
-                onClick={() => history.push('/posts/' + post.id)}>Open
+                onClick={() => history.push('/posts/' + post.id)}>
+          Open
         </button>
       </div>
     </div>

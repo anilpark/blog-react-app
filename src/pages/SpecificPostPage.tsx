@@ -40,7 +40,10 @@ const SpecificPostsPage: React.FC = () => {
     <div className={'container'}>
       {!postAvailable && <div>
         <h3>There is no such post</h3>
-        <button className={'btn btn-light'} onClick={() => history.push('/posts')}>All posts</button>
+        <button className={'btn btn-light'}
+                onClick={() => history.push('/posts')}>
+          All posts
+        </button>
       </div>}
       {postAvailable &&
       <SpecificPost post={currentPost}

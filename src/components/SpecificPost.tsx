@@ -27,7 +27,8 @@ const SpecificPost: React.FC<SpecificPostProps> = ({post, editPost, addComment, 
     <>
       {editMode && <EditPostForm oldTitle={post.title} oldBody={post.body}
                                  updatePost={editPostHandler}
-                                 closeEditMode={editModeToggle}/>}
+                                 closeEditMode={editModeToggle}/>
+      }
 
       {!editMode &&
       <div className={'row mt-2'}>

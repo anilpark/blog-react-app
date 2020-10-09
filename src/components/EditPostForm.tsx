@@ -25,15 +25,31 @@ const EditPostForm: React.FC<editPostFormProps> = ({oldTitle, oldBody, updatePos
         <form>
           <div className="form-group">
             <h4>Edit post</h4>
-            <input type="text" className="form-control" placeholder="Title" value={title} onChange={updateTitle}/>
+            <input type="text"
+                   className="form-control"
+                   placeholder="Title"
+                   value={title}
+                   onChange={updateTitle}
+            />
           </div>
 
           <div className="form-group">
-            <textarea className="form-control" rows={3} placeholder={'Post body'} value={body} onChange={updateBody}/>
+            <textarea className="form-control"
+                      rows={3}
+                      placeholder={'Post body'}
+                      value={body}
+                      onChange={updateBody}
+            />
           </div>
 
-          <button className={'btn btn-success'} onClick={() => updatePost(title, body)}>Save</button>
-          <button className={'btn'} onClick={closeEditMode}>Cancel</button>
+          <button className={'btn btn-success'}
+                  onClick={() => updatePost(title, body)}>
+            Save
+          </button>
+          <button className={'btn'}
+                  onClick={closeEditMode}>
+            Cancel
+          </button>
         </form>
       </div>
     </div>

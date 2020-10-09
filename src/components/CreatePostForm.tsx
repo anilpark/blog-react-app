@@ -19,16 +19,26 @@ const CreatePostForm: React.FC<FormProps> = ({addPost}) => {
     <form>
       <div className="form-group mt-2">
         <h4>New post</h4>
-        <input type="text" className="form-control" placeholder="Title" value={title}
-               onChange={(e => setTitle(e.target.value))}/>
+        <input type="text"
+               className="form-control"
+               placeholder="Title"
+               value={title}
+               onChange={(e => setTitle(e.target.value))}
+        />
       </div>
 
       <div className="form-group">
-        <textarea className="form-control" rows={3} placeholder={'Post body'} value={body}
+        <textarea className="form-control"
+                  rows={3}
+                  placeholder={'Post body'}
+                  value={body}
                   onChange={(e => setBody(e.target.value))}
         />
       </div>
-      <button className={'btn btn-success'} onClick={addPostHandler}>Add</button>
+      <button className={'btn btn-success'}
+              onClick={addPostHandler}>
+        Add
+      </button>
     </form>
   )
 }

@@ -32,10 +32,17 @@ const AddCommentForm: React.FC<AddCommentProps> = ({addComment, postId}) => {
   return (
     <form>
       <div className="form-group mt-2">
-        <textarea className="form-control" rows={1} placeholder={'Enter your comment'} onChange={changeInputHandler}
-                  value={body}/>
+        <textarea className="form-control"
+                  rows={1}
+                  placeholder={'Enter your comment'}
+                  onChange={changeInputHandler}
+                  value={body}
+        />
       </div>
-      <button className={btnClasses.join(' ')} onClick={addPostHandler} disabled={isNewCommentEmpty}>Add comment
+      <button className={btnClasses.join(' ')}
+              onClick={addPostHandler}
+              disabled={isNewCommentEmpty}>
+        Add comment
       </button>
     </form>
   )
